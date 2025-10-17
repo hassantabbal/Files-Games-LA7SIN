@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeux PS3 — Téléchargement PKG | PS3 & PS4 Files</title>
+  <link rel="icon" href="images/lugo.png" type="image/png">
+  <link rel="stylesheet" href="page.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="nav-wrap">
+      <div class="brand">
+        <img src="images/lugo.png" alt="PS3 Logo">
+        <div>
+          <h1>PS3 Games — PKG Downloads</h1>
+          <p>Direct Links | Tested | Mediafire</p>
+        </div>
+      </div>
+
+      <nav>
+        <a href="WORLD_PS3.html.html">Accueil</a>
+        <a href="games_ps3.html" class="active">PS3 Games</a>
+        <a href="GAMRS_PS4.html">PS4 Games</a>
+        <a href="guides.html">Guides</a>
+        <a href="tools.html">Tools</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== TITLE ===== -->
+  <section class="hero">
+    <div class="copy">
+      <h2>Liste complète des jeux PS3 au format PKG</h2>
+      <p>Téléchargez des jeux PS3 testés et sûrs avec des liens Mediafire directs. Chaque jeu contient les fichiers PKG, les patchs et les licences nécessaires à l’installation.</p>
+    </div>
+  </section>
+
+  <!-- ===== SEARCH BAR ===== -->
+  <div style="text-align:center; margin:20px;">
+    <input type="search" id="search" placeholder="Rechercher un jeu PS3..." style="padding:8px;width:60%;border-radius:8px;">
+  </div>
+
+  <!-- ===== GAMES GRID ===== -->
+  <main class="container">
+    <section id="games">
+      <h2>Jeux PS3 disponibles</h2>
+      <div class="games-grid">
+
+        <!-- Minecraft -->
+        <article class="card">
+          <img src="images/MINECRAF.jpg" alt="Minecraft PS3">
+          <h3>Minecraft PS3 Edition</h3>
+          <p>Version classique PS3 avec tous les packs additionnels. Fichiers PKG divisés en 3 parties.</p>
+          <div class="download-list">
+            <a class="dl" href="MINECRAFT.html">Ouvrir la page</a>
+          </div>
+        </article>
+
+        <!-- Blur -->
+        <article class="card">
+          <img src="images/BLUR.jpg" alt="Blur PS3">
+          <h3>Blur</h3>
+          <p>Jeu de course arcade avec patch et licence inclus.</p>
+          <div class="download-list">
+            <a class="dl" href="BLUR.html">Ouvrir la page</a>
+          </div>
+        </article>
+
+        <!-- PES 2024 -->
+        <article class="card">
+          <img src="images/PES24.png" alt="PES 2024 PS3">
+          <h3>PES 2024</h3>
+          <p>Mise à jour complète des équipes, stades et option file (OF) inclus.</p>
+          <div class="download-list">
+            <a class="dl" href="PES24.html">Ouvrir la page</a>
+          </div>
+        </article>
+
+        <!-- PES 2026 -->
+        <article class="card">
+          <img src="images/PES26.jpg" alt="PES 2026 PS3">
+          <h3>PES 2026</h3>
+          <p>Version modifiée par la communauté avec patchs et fichiers Live Update.</p>
+          <div class="download-list">
+            <a class="dl" href="PES26.html">Ouvrir la page</a>
+          </div>
+        </article>
+
+        <!-- GTA V -->
+        <article class="card">
+          <img src="images/GTA V.jpg" alt="GTA V PS3">
+          <h3>GTA V</h3>
+          <p>Version complète (8 PKG) avec patch et licence. Tutoriel d’installation inclus.</p>
+          <div class="download-list">
+            <a class="dl" href="GTA_V.html">Ouvrir la page</a>
+          </div>
+        </article>
+
+        <!-- Tomb Raider -->
+        <article class="card">
+          <img src="images/tomb raider ps3.jpg" alt="Tomb Raider PS3">
+          <h3>Tomb Raider</h3>
+          <p>Édition aventure avec tous les DLC et correctifs disponibles.</p>
+          <div class="download-list">
+            <a class="dl" href="tomb raider.html">Ouvrir la page</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h4>À propos</h4>
+        <p>Archive complète des jeux PS3 au format PKG avec liens Mediafire directs. Tous les fichiers sont testés avant publication.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p class="social">
+          <a href="https://www.instagram.com/hassan_tabbal/">Instagram</a>
+          <a href="https://www.youtube.com/@HASSANTABBAL">YouTube</a>
+          <a href="https://www.facebook.com/ffree.gassem?locale=ar_AR">Facebook</a>
+        </p>
+      </div>
+      <div>
+        <h4>Liens rapides</h4>
+        <p><a class="dl" href="index.html">Accueil</a> <a class="dl" href="games_ps4.html">Jeux PS4</a></p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:18px;color:#bfcfdc;opacity:0.9">
+      &copy; 2025 PS3 & PS4 Files — Tous droits réservés.
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPT ===== -->
+  <script>
+    const search = document.getElementById('search');
+    search.addEventListener('input', e => {
+      const q = e.target.value.toLowerCase();
+      document.querySelectorAll('.card').forEach(card => {
+        const t = card.querySelector('h3').innerText.toLowerCase();
+        card.style.display = t.includes(q) ? '' : 'none';
+      });
+    });
+  </script>
+
+</body>
+</html>
