@@ -8,63 +8,83 @@
 </head>
 <body>
 
-  <!-- ====== En-tête ====== -->
-  <h1>Guides d'Installation — PS3 & PS4</h1>
-  <hr>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="nav-wrap">
+      <div class="brand">
+        <img src="images/lugo.png" alt="PS3 Logo">
+        <h1>PS3 & PS4 Files and Games</h1>
+      </div>
 
-  <!-- ====== Section : Installation des Jeux PS3 ====== -->
-  <section>
-    <h2>🎮 Installation des Jeux PS3 (PKG)</h2>
-    <ol>
-      <li>Téléchargez le fichier <strong>.PKG</strong> depuis notre site (Mediafire recommandé).</li>
-      <li>Copiez le fichier sur une clé USB formatée en <strong>FAT32</strong>.</li>
-      <li>Branchez la clé sur votre console PS3.</li>
-      <li>Sur la PS3, allez dans : <em>Package Manager → Install Package Files → Standard</em>.</li>
-      <li>Sélectionnez le fichier du jeu pour lancer l'installation.</li>
-      <li>Si le jeu nécessite un <strong>RAP</strong> ou une <strong>licence</strong>, copiez-le dans :
-        <code>dev_hdd0/home/0000000x/exdata</code>
-      </li>
-      <li>Redémarrez la console et profitez de votre jeu !</li>
-    </ol>
-  </section>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="games_ps3.html">PS3 Games</a>
+        <a href="games_ps4.html">PS4 Games</a>
+        <a href="guides.html" class="active">Guides</a>
+        <a href="videos.html">Vidéos</a>
+        <a href="tools.html">Tools</a>
+        <div class="search">
+          <input type="search" id="search" placeholder="Search game or file..." />
+        </div>
+      </nav>
+    </div>
+  </header>
 
-  <!-- ====== Section : Patches / Mises à jour ====== -->
-  <section>
-    <h2>🧩 Application des Patches / Mises à jour</h2>
-    <ul>
-      <li>Téléchargez le patch (.PKG) correspondant à votre version du jeu.</li>
-      <li>Installez-le comme un jeu PKG normal.</li>
-      <li>Assurez-vous que la version du patch correspond à votre ID de jeu (ex: BLUS31612).</li>
-      <li>Certains patchs incluent des mises à jour ou des modifications graphiques (Option File, maillots, etc).</li>
-    </ul>
-  </section>
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="container">
+    <h1>📘 Guides d'Installation — PS3 & PS4</h1>
+    <p class="intro">Suivez ces étapes simples pour installer vos jeux PS3 et PS4 facilement.</p>
 
-  <!-- ====== Section : Installation des Jeux PS4 ====== -->
-  <section>
-    <h2>🕹️ Installation des Jeux PS4 (PKG)</h2>
-    <ol>
-      <li>Assurez-vous que votre PS4 est jailbreakée (5.05 / 9.00 / 11.00 selon la méthode).</li>
-      <li>Activez le mode FTP ou utilisez une clé USB.</li>
-      <li>Installez le fichier .PKG depuis le menu debug :
-        <em>Debug Settings → Game → Package Installer</em>.
-      </li>
-      <li>Patientez durant l’installation — cela peut prendre plusieurs minutes selon la taille du jeu.</li>
-      <li>Lancez le jeu depuis le menu principal.</li>
-    </ol>
-  </section>
+    <section class="guide-box">
+      <h2>🎮 Installation des Jeux PS3 (PKG)</h2>
+      <ol>
+        <li>Téléchargez le fichier <strong>.PKG</strong> depuis notre site (Mediafire recommandé).</li>
+        <li>Copiez le fichier sur une clé USB formatée en <strong>FAT32</strong>.</li>
+        <li>Branchez la clé sur votre console PS3.</li>
+        <li>Sur la PS3 : <em>Package Manager → Install Package Files → Standard</em>.</li>
+        <li>Sélectionnez le fichier du jeu pour lancer l'installation.</li>
+        <li>Si le jeu nécessite un <strong>RAP</strong> ou une <strong>licence</strong>, copiez-le dans :
+          <code>dev_hdd0/home/0000000x/exdata</code>
+        </li>
+        <li>Redémarrez la console et profitez du jeu !</li>
+      </ol>
+    </section>
 
-  <!-- ====== Section : Conseils ====== -->
-  <section>
-    <h2>💡 Conseils Utiles</h2>
-    <ul>
-      <li>Ne renommez jamais les fichiers PKG avant installation.</li>
-      <li>Utilisez <strong>Multiman</strong> ou <strong>webMAN MOD</strong> pour gérer vos jeux PS3.</li>
-      <li>Évitez les coupures de courant pendant une installation.</li>
-      <li>Gardez toujours une copie de sauvegarde de vos jeux sur PC.</li>
-    </ul>
-  </section>
+    <section class="guide-box">
+      <h2>🧩 Application des Patches / Mises à jour</h2>
+      <ul>
+        <li>Téléchargez le patch (.PKG) correspondant à votre version du jeu.</li>
+        <li>Installez-le comme un fichier PKG normal.</li>
+        <li>Vérifiez que la version du patch correspond à votre ID (ex: BLUS31612).</li>
+        <li>Certains patchs contiennent des maillots, menus ou fichiers Option.</li>
+      </ul>
+    </section>
 
-  <!-- ====== Pied de page ====== -->
+    <section class="guide-box">
+      <h2>🕹️ Installation des Jeux PS4 (PKG)</h2>
+      <ol>
+        <li>Assurez-vous que votre PS4 est jailbreakée (5.05 / 9.00 / 11.00 selon la méthode).</li>
+        <li>Activez le mode FTP ou utilisez une clé USB.</li>
+        <li>Installez le fichier .PKG via :
+          <em>Debug Settings → Game → Package Installer</em>.
+        </li>
+        <li>Patientez pendant l'installation — cela peut durer plusieurs minutes.</li>
+        <li>Lancez le jeu depuis le menu principal.</li>
+      </ol>
+    </section>
+
+    <section class="guide-box">
+      <h2>💡 Conseils Utiles</h2>
+      <ul>
+        <li>Ne renommez jamais les fichiers PKG avant installation.</li>
+        <li>Utilisez <strong>Multiman</strong> ou <strong>webMAN MOD</strong> pour gérer vos jeux PS3.</li>
+        <li>Évitez les coupures de courant pendant l'installation.</li>
+        <li>Gardez une copie de sauvegarde de vos jeux sur PC.</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
   <footer>
     © 2025 Gaming Universe — Tous droits réservés
   </footer>
